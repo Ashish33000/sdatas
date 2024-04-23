@@ -66,9 +66,14 @@ public class Member {
 		this.zip = zip;
 	}
 
-	public String toCSVString( ) {
-		//TODO implement this
-		return null;
-	}
+	   public String toCSVString() {
+	        return id + "," +
+	                firstName + "," +
+	                lastName + "," +
+	                address + "," +
+	                city + "," +
+	                state + "," +
+	                zip;
+	    }
 
 }

@@ -53,7 +53,7 @@ public class Main extends MemberFileConverter {
 			}
 			
 		}
-		// TODO
+		
 		return res;
 	}
 
@@ -61,13 +61,13 @@ public class Main extends MemberFileConverter {
 		//TODO
 		Main main=new Main();
 		try {
-            File inputMemberFile = new File("C:\\Users\\hi\\Desktop\\java test file (3)\\SDS_Entry_Maven\\Members.txt");
-            String outputFilePath = "C:\\Users\\hi\\Desktop\\java test file (3)\\SDS_Entry_Maven\\csvoutput";  
-            String outputFileName = "outputFile.csv";
+            File inputFile = new File("C:\\Users\\hi\\Desktop\\java test file (3)\\SDS_Entry_Maven\\Members.txt");
+            String outputFile = "C:\\Users\\hi\\Desktop\\java test file (3)\\SDS_Entry_Maven";  
+            String FileName = "outputFile.csv";
 
-            main.convert(inputMemberFile, outputFilePath, outputFileName);
+            main.convert(inputFile, outputFile, FileName);
         } catch (Exception e) {
-        	 System.err.println( e.getMessage());
+        	 System.out.println( e.getMessage());
           e.printStackTrace();
         }
 	}
